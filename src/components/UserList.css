@@ -1,15 +1,15 @@
-.userDisplay {
-    text-align: left;
+.userDisplay ul {
+    list-style: none;
+    text-align: center;
     margin: auto;
     border: cornsilk;
     height: 80%;
-    width:60%;
+    width:80%;
 }
 
 .userDisplay li {list-style: none;
     background-color: white;
     text-align: center;
-    margin:0.5rem ;
     font: inherit;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
@@ -17,4 +17,6 @@
     border: 1px solid #ccc;
     height: 9px;
     width: 90%;
+    margin:1%;
+    font: inherit;
 }

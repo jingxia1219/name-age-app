@@ -28,11 +28,13 @@ function  UserList () {
     console.log(curUsers);
     const userDisplay = curUsers.map( user => {
         return(
-            <div className='userDisplay' key={user.id}>
-            <li>
-                {`${user.name}, age: ${user.age}`}
-            </li>
-            </div>
+            // <div className='userDisplay'>
+                <ul className='userDisplay' key={user.id}>
+                    <li>
+                        {`${user.name}, age: ${user.age}`}
+                    </li>
+                </ul>
+            // </div>
         )
     })
     return(
