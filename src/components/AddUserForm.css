@@ -1,0 +1,40 @@
+.user-input__form
+{  
+  background-color: whitesmoke;
+  margin-bottom: 1rem;
+  text-align: left;
+    width: 60%;
+    max-width: 100%;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px gray;
+    border-radius: 12px;
+  }
+  
+  .new-user__control label {
+    font-weight: 600 ;
+    margin-bottom: 0.1rem;
+    display: block;
+  }
+
+  .new-user__control input {
+    margin:1%;
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    height: 9px;
+    width: 80%;
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.2rem 0.9rem;
+    border: 1px solid #502a61;
+    background-color: #40005d;
+    color: white;
+    border-radius: 2px;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+  }
