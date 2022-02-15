@@ -9,7 +9,7 @@ props.inputContent(input);
     return(
         <div className='new-user__control'>
                 <label>{props.inputType}</label>
-                <input type='text' onChange={changeHandler}></input>
+                <input value ={props.children}type='text' onChange={changeHandler}></input>
         </div>
     )
 }
