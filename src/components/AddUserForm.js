@@ -5,6 +5,11 @@ import React,{useState} from 'react'
 function AddUserForm(props) {
     const submitHandler = (event)=> {
         event.preventDefault();
+        if(name.length < 1) {
+        alert('please anter a name');
+        setAge("");
+        return
+        }
         props.onNewUser({name:name,age:age})
         setName("");
         setAge("");
@@ -15,10 +20,8 @@ function AddUserForm(props) {
         setName(event.target.value)
     }
     const ageChangeHandler=(event)=> {
-        setAge(event.target.value)
+        setAge(+event.target.value)
     }
-    // console.log(userName,userAge)
-
     return (
             <form className='user-input__form' onSubmit={submitHandler}> 
               <div className='new-user__control'>
@@ -27,7 +30,7 @@ function AddUserForm(props) {
         </div>
         <div className='new-user__control'>
                 <label>{props.inputType}</label>
-                <input value ={age}type='text' onChange={ageChangeHandler}></input>
+                <input min='0' max='100' value ={age} type='number' onChange={ageChangeHandler}></input>
         </div>
                 <button type="submit">Add User</button>
             </form>

@@ -12,9 +12,11 @@ function  UserList () {
     // const [userName,setUserName] = useState("");
     // const [userAge,setUserAge] = useState("");
     let curId = 0;
+    console.log(curUsers);
     if (curUsers.length >= 1){
-        curId = curUsers[curUsers.length-1]+1;
+        curId = curUsers[0].id-1;
     }
+    console.log(curId);
     let newUser;
     const newUserHandler = (newUserObj) => {
         newUser = {id:curId,...newUserObj};
